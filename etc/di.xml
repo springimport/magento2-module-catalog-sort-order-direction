@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- The plugin will be always work; preference (Toolbar) will be correctly work only if you don't use SpringImport_CatalogDropdownSort module -->
+    <type name="Magento\Catalog\Block\Product\ProductList\Toolbar">
+        <plugin name="manage_catalog_sort_direction" type="SpringImport\CatalogSortOrderDirection\Plugin\ToolbarPlugin" sortOrder="10" />
+    </type>
+    <!--<preference for="Magento\Catalog\Block\Product\ProductList\Toolbar" type="SpringImport\CatalogSortOrderDirection\Block\Product\ProductList\Toolbar" />-->
+    <!-- end -->
+
+    <preference for="Magento\Catalog\Helper\Product\ProductList" type="SpringImport\CatalogSortOrderDirection\Helper\Product\ProductList" />
+</config>
