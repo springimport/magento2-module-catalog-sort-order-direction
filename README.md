@@ -12,17 +12,8 @@ Add config for setting sort order direction in Catalog. Supports only global set
 
 ## Installation
 
-Enable module:
 ```bash
-php -f bin/magento module:enable SpringImport_CatalogSortOrderDirection
-```
-
-Disable module:
-```bash
-php -f bin/magento module:disable SpringImport_CatalogSortOrderDirection
-```
-
-Update system:
-```bash
-php -f bin/magento setup:upgrade
+composer require springimport/magento2-module-catalog-sort-order-direction
+php bin/magento module:enable SpringImport_CatalogSortOrderDirection
+php bin/magento setup:upgrade
 ```
