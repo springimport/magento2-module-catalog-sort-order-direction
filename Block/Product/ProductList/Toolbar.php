@@ -22,7 +22,7 @@ class Toolbar extends \Magento\Catalog\Block\Product\ProductList\Toolbar
         }
 
         $directions = ['asc', 'desc'];
-        $dir = strtolower($this->_toolbarModel->getDirection());
+        $dir = strtolower((string) $this->_toolbarModel->getDirection());
         if (!$dir || !in_array($dir, $directions)) {
             $dir = $this->getOrderDirection();
         }
