@@ -108,6 +108,7 @@ class ToolbarPlugin
         $dir
     ) {
         $this->_direction = $dir;
+        return $this;
     }
 
     /**
